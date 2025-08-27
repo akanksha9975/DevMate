@@ -4,7 +4,8 @@ import { useViews } from "@/context/ViewContext"
 import { VIEWS } from "@/types/view"
 import { useState } from "react"
 import { Tooltip } from "react-tooltip"
-import { buttonStyles, tooltipStyles } from "../tooltipStyles"
+// import { buttonStyles, tooltipStyles } from "../tooltipStyles"
+import {  tooltipStyles } from "../tooltipStyles"
 
 interface ViewButtonProps {
     viewName: VIEWS
