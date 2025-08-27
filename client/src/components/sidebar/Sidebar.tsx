@@ -1,10 +1,10 @@
 
 import SidebarButton from "@/components/sidebar/sidebar-views/SidebarButton"
-import { useAppContext } from "@/context/AppContext"
-import { useSocket } from "@/context/SocketContext"
+// import { useAppContext } from "@/context/AppContext"
+// import { useSocket } from "@/context/SocketContext"
 import { useViews } from "@/context/ViewContext"
 import useResponsive from "@/hooks/useResponsive"
-import useWindowDimensions from "@/hooks/useWindowDimensions"
+// import useWindowDimensions from "@/hooks/useWindowDimensions"
 
 import { VIEWS } from "@/types/view"
 import cn from "classnames"
@@ -15,10 +15,10 @@ function Sidebar() {
         isSidebarOpen,
         viewComponents,
         viewIcons,
-        setIsSidebarOpen,
+        
     } = useViews()
     const { minHeightReached } = useResponsive()
-    const { isMobile } = useWindowDimensions()
+    // const { isMobile } = useWindowDimensions()
 
     return (
         <aside className="flex w-full md:h-full md:max-h-full md:min-h-full md:w-auto">
